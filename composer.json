@@ -1,6 +1,7 @@
 {
     "name": "ameotoko/feathericon-bundle",
     "type": "symfony-bundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "ameotoko",
