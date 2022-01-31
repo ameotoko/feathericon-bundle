@@ -1,0 +1,16 @@
+{
+    "name": "ameotoko/feathericon-bundle",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "ameotoko",
+            "email": "andrey.vinichenko@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ameotoko\\FeathericonBundle\\": "src/"
+        }
+    },
+    "require": {}
+}
