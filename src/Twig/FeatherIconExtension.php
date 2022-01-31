@@ -6,11 +6,19 @@
 
 namespace Ameotoko\FeatherIcon\Twig;
 
+use Feather\Icons;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
 class FeatherIconExtension extends AbstractExtension
 {
+    private Icons $manager;
+
+    public function __construct()
+    {
+        $this->manager = new Icons();
+    }
+
     public function getFunctions(): array
     {
         return [
@@ -18,8 +26,8 @@ class FeatherIconExtension extends AbstractExtension
         ];
     }
 
-    public function getIcon(): string
+    public function getIcon(string $icon, array $attributes = []): string
     {
-        return 'ICON';
+        return $this->manager->get($icon, $attributes, false);
     }
 }

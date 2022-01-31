@@ -9,8 +9,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ameotoko\\FeathericonBundle\\": "src/"
+            "Ameotoko\\FeatherIcon\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "php": "^7.4",
+        "pixelrobin/php-feather": "^1.0"
+    }
 }
